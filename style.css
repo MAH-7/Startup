@@ -1,0 +1,69 @@
+html,body {
+  background: url(peakpx.jpg) no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  font-family: 'Dela Gothic One', cursive;
+}
+
+hr {
+  max-width: 65px;
+  border-color: #fbc2b1;
+  border-width: 3px;
+  opacity: 100%;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #fbc2b1;
+}
+
+.buffer {
+  height: 10rem;
+}
+
+
+.btn-FOM {
+  padding: 1.1em 2em;
+  background: none;
+  border: 2px solid #9d3e91;
+  font-size: 15px;
+  color: #fbc2b1;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s;
+  border-radius: 12px;
+  background-color: #ed57b1;
+  font-weight: bolder;
+  box-shadow: 0 2px 0 2px #000;
+}
+
+.btn-FOM::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 120%;
+  background-color: #f892a0;
+  top: 50%;
+  transform: skewX(30deg) translate(-150%, -50%);
+  transition: all 0.5s; 
+}
+
+.btn-FOM:hover {
+  background-color: #fbc2b1;
+  color: #fff;
+  box-shadow: 0 2px 0 2px #0d3b66;
+ 
+}
+
+.btn-FOM:hover::before {
+  transform: skewX(-20deg) translate(150%, -50%);
+  transition-delay: 0.1s; 
+}
+
+.btn-FOM:active {
+  transform: scale(0.9);
+}
